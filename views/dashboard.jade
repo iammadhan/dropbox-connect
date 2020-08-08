@@ -1,0 +1,7 @@
+h1 List of files in your account
+- var values = data;
+ul
+  each val in values.length ? values : ['There are no values']
+    - var pathLowerArr = val.path_lower.split('/')
+    if pathLowerArr.length == 2
+      li= val.name+" "+val['.tag']
